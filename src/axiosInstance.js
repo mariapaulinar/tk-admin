@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Crear una instancia de axios con la configuración base
 const axiosInstance = axios.create({
-  baseURL: 'https://tk-api.test/api/v1', // Cambia esto por la URL base de tu API
+  baseURL: process.env.REACT_APP_API_URL, // Cambia esto por la URL base de tu API
   headers: {
     'Content-Type': 'application/json',
     // Puedes agregar más encabezados si es necesario
